@@ -99,25 +99,25 @@ class _ScreenTextFieldState extends State<ScreenTextField> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    if (emailController.text == email &&
-                        passwordController.text == password) {
-                      print('You are Succeful authorized');
+                    // if (emailController.text == email &&
+                    //     passwordController.text == password) {
+                    //   print('You are Succeful authorized');
 
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => SecondPage(),
-                        ),
-                      );
-                    } else if (emailController.text == email &&
-                        passwordController.text != password) {
-                      print('Error Password');
-                    } else if (passwordController.text == password &&
-                        emailController.text != email) {
-                      print('Error Email');
-                    } else {
-                      print('Введите заново или другой почту!');
-                    }
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SecondPage(),
+                      ),
+                    );
+                    // } else if (emailController.text == email &&
+                    //     passwordController.text != password) {
+                    //   print('Error Password');
+                    // } else if (passwordController.text == password &&
+                    //     emailController.text != email) {
+                    //   print('Error Email');
+                    // } else {
+                    //   print('Введите заново или другой почту!');
+                    // }
                   },
                   child: const Text(
                     'Log in',
